@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:  url("background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 30vh;
+        }
+        .choice{
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+        }
+        .item{
+            padding: 10px;
+            
+        }
+        .h2 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .output {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            background-color: rgb(202, 132, 71); 
+            padding: 10px 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            max-width: fit-content; 
+            margin: 0 auto;
+            
+        }
+        button{
+            color: white;
+            border-radius: 10px;
+            border: none;
+            padding: 10px 20px;
+            background-color: black;
+            margin-bottom: 10px;
+        }
+        button:hover{
+            background-color: rgb(184, 110, 50);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="h2">Rock, Paper, Scissors</h2>
+    <div class="choice">
+        <div class="item">
+            <button class="rock">Rock</button>
+        </div>
+        <div class="item">
+            <button class="paper">Paper</button>
+        </div>
+        <div class="item">
+            <button class="scissor">Scissor</button>
+        </div>
+    </div>
+    <div id="output" class="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
